@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="2" ignored="0" total="3" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[STEP1]]>
+    </line>
+    <line>
+      <![CDATA[STEP2]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="94288" started-at="2018-03-28T11:12:24Z" finished-at="2018-03-28T11:13:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="94288" started-at="2018-03-28T11:12:24Z" finished-at="2018-03-28T11:13:59Z">
+      <class name="com.pom.testcases.LoginBCT">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="beforSuite" is-config="true" duration-ms="204" started-at="2018-03-28T11:12:24Z" finished-at="2018-03-28T11:12:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforSuite -->
+        <test-method status="PASS" signature="setSheetName()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="setSheetName" is-config="true" duration-ms="1" started-at="2018-03-28T11:12:24Z" depends-on-methods="com.pom.wrappers.ProjectWrappers.beforSuite" finished-at="2018-03-28T11:12:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setSheetName -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="beforeTest" is-config="true" duration-ms="107" started-at="2018-03-28T11:12:25Z" finished-at="2018-03-28T11:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="getAllObjects()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="getAllObjects" is-config="true" duration-ms="366" started-at="2018-03-28T11:12:25Z" finished-at="2018-03-28T11:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllObjects -->
+        <test-method status="PASS" signature="getGridConfig()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="getGridConfig" is-config="true" duration-ms="35" started-at="2018-03-28T11:12:25Z" finished-at="2018-03-28T11:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGridConfig -->
+        <test-method status="PASS" signature="getMobileConfig()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="getMobileConfig" is-config="true" duration-ms="49" started-at="2018-03-28T11:12:25Z" finished-at="2018-03-28T11:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMobileConfig -->
+        <test-method status="PASS" signature="setTestData()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="setTestData" is-config="true" duration-ms="31" started-at="2018-03-28T11:12:25Z" finished-at="2018-03-28T11:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="setData" is-config="true" duration-ms="3" started-at="2018-03-28T11:12:25Z" finished-at="2018-03-28T11:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="beforeMethod" is-config="true" duration-ms="15390" started-at="2018-03-28T11:12:25Z" finished-at="2018-03-28T11:12:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="loginFail(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="loginFail" duration-ms="35069" started-at="2018-03-28T11:12:41Z" data-provider="fetchData" finished-at="2018-03-28T11:13:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bctchn]]>
+              </value>
+            </param>
+          </params>
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+at atu.testng.reports.ATUReports.add(Unknown Source)
+at com.pom.wrappers.GenericWrappers.enter(GenericWrappers.java:1038)
+at com.pom.pages.LoginPage.enterUserId(LoginPage.java:22)
+at com.pom.testcases.LoginBCT.loginFail(LoginBCT.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginFail -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="afterMethod" is-config="true" duration-ms="642" started-at="2018-03-28T11:13:16Z" finished-at="2018-03-28T11:13:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="beforeMethod" is-config="true" duration-ms="6738" started-at="2018-03-28T11:13:16Z" finished-at="2018-03-28T11:13:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="loginPass(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="loginPass" duration-ms="35064" started-at="2018-03-28T11:13:23Z" data-provider="fetchData" finished-at="2018-03-28T11:13:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bctchn]]>
+              </value>
+            </param>
+          </params>
+          <exception class="atu.testng.reports.exceptions.ATUReporterStepFailedException">
+            <full-stacktrace>
+              <![CDATA[[ATU Custom Reporter Step Failed Exception]
+at atu.testng.reports.ATUReports.stepFailureHandler(Unknown Source)
+at atu.testng.reports.ATUReports.add(Unknown Source)
+at com.pom.wrappers.GenericWrappers.enter(GenericWrappers.java:1038)
+at com.pom.pages.LoginPage.enterUserId(LoginPage.java:22)
+at com.pom.testcases.LoginBCT.loginPass(LoginBCT.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- atu.testng.reports.exceptions.ATUReporterStepFailedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginPass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="afterMethod" is-config="true" duration-ms="639" started-at="2018-03-28T11:13:58Z" finished-at="2018-03-28T11:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="loginSkip" duration-ms="0" started-at="2018-03-28T11:13:59Z" data-provider="fetchData" depends-on-methods="com.pom.testcases.LoginBCT.loginFail" finished-at="2018-03-28T11:13:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LoginBCT.loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LoginBCT.loginSkip(java.lang.String, java.lang.String)[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSkip -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="afterTest" is-config="true" duration-ms="7" started-at="2018-03-28T11:13:59Z" finished-at="2018-03-28T11:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.pom.testcases.LoginBCT@1b68b9a4]" name="afterSuite" is-config="true" duration-ms="221" started-at="2018-03-28T11:13:59Z" finished-at="2018-03-28T11:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.pom.testcases.LoginBCT -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
